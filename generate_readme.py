@@ -9,7 +9,8 @@ for i in range(len(books)):
   book=books[i]
   name=book['name']
   id=book['id']
-  f.write('<a href="txts/%s.txt">%s</a><br>'%(id,name))
+  raw='https://raw.githubusercontent.com/Ma7moud3ly/hindawi-org/master'
+  f.write('<a href="%s/txts/%s.txt">%s</a><br>'%(raw,id,name))
 
 f.write('</div>')
 f.close()
